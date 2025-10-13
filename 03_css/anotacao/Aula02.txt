@@ -1,0 +1,12 @@
+------------------------------------------------
+
+# Box model
+--> margin = espaço ao redor
+--> border = borda
+--> padding = preenchimento interno da caixa
+
+# Display = flow
+block = espaço todo
+inline = um do lado do outro
+
+# Display block

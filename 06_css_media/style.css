@@ -1,0 +1,28 @@
+/* formas de importar o  */
+@import url("") screen and (orientation: portrait);
+
+:root{
+  --bg-color: #0a9ee2b4;
+  color:#ffffff;
+}
+
+body{
+  background-color: var(--bg-color);
+}
+
+@media screen and ( min-width:576px) and (max-width:800px) {
+
+  :root{
+    --bg-color:#db0ae2b4;
+    color:black;
+  }
+
+}
+@media screen and ( width >= 801px < 1000px) {
+
+  :root{
+    --bg-color:#db0ae2b4;
+    color:black;
+  }
+
+}

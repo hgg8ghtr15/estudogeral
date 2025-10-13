@@ -1,0 +1,36 @@
+-----------------------------------
+### Aula 06
+Tags principais do sistema.
+
+header  ->
+main    ->
+aside   ->
+footer  ->
+
+Tags Segundarias
+
+nav     ->
+section ->
+    deve possuir h2
+    deve estar em aside
+article ->
+
+-----------------------------------
+### Aula 07
+Fluxo de bloco
+    div
+Fluxo em linhA, uma do lado da outra
+    span
+
+-----------------------------------
+### Aula 08 caminho absoluto / relativo
+--> Absoluto, 
+http://google.com.br
+file://
+
+
+
+--> Relativo 
+usa o caminho relativo que estou
+
+

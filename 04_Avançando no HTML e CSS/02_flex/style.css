@@ -1,0 +1,22 @@
+.container{
+    /* height: 50vh; */
+    border: dashed;
+    display: flex;
+    flex-direction: row;
+    /* justify-content:  space-around; */
+    align-items: stretch;    
+    gap: 40px;
+    /* flex-wrap: wrap; */
+}
+.item {
+    /* width: 120px;
+    --hue:0;
+    text-align: center;
+    background-color: hsl(var(--hue),100%,70%); */
+    flex-grow: 1;
+
+}
+.item:nth-child(2) {
+    flex-grow: 4;
+    order: 0;
+}

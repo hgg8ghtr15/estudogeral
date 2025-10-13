@@ -1,0 +1,34 @@
+## Comentários
+<-! Comentario ->
+
+
+## Tag
+<h1 id="id">Titulo<h1> -> elemeto
+--> <h1> tag
+--> titulo conteúdo
+--> id = atributo
+
+## Tags
+<br/>
+--bloco
+--inline
+
+##Tags
+--Alinhamentos
+<p>
+  <em> Enfaze <em/>
+  <strong> Negrito <strong/>
+<p/>
+
+
+## Carateres reservado
+<p>
+&lt; = >
+&amp = &
+<code> <code/> usada para código.
+
+
+
+
+
+

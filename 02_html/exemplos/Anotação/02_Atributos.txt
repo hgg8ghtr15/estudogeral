@@ -1,0 +1,24 @@
+## Atributos
+--> Informação extra ou configurações da tags
+--> padrão aspa duplas
+
+<img src="" alt="" >
+<a title="Google" href="Link">Google</a>
+
+## atributo bolleano
+<h1 hidden > </h1> certo
+<h1 hidden="hidden" > </h1> certo
+
+
+## atributo blobais
+--> id="nome" = RG, não repete,  seguir padrão de variável na nomenclatura
+
+--> class="produto" = usado para CSS e JS, pode usar varias
+<div class="produto calcado"> </div>
+
+--> data-id = usado dentro do CSS ou JS
+<div data-qualquer-coisa="teste"> </div>
+
+--> style = usada para CSS, use pouco
+<div style="color:red"> </div>
+

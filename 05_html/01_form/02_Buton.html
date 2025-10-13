@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="forme1" action="" enctype="multipart/form-data">
+      <button
+        type="submit"
+        disabled
+        autofocus
+        name="submit-button"
+        value="teste"
+      >
+        Subumit
+      </button>
+      <br />
+      <input
+        type="text"
+        name="input-text"
+        value="teste"
+        form="forme1"
+        readonly
+        autocomplete="additional-name"
+        size="30"
+        placeholder="Digite algo"
+        required
+      />
+      <br />
+      <input
+        type="number"
+        name="input-number"
+        min="10"
+        max="20"
+        step="2"
+        required
+        placeholder="10 a 20"
+      />
+      <br />
+      <input
+        type="email"
+        name="email"
+        multiple
+        readonly
+        placeholder="email"
+        minlength="10"
+        maxlength="30"
+        required
+        pattern=".+@cometa.com.br"
+        title="@cometa.com.br"
+      />
+      <br />
+      <input
+        type="password"
+        minlength="8"
+        maxlength="20"
+        name="senha"
+        inputmode="numeric"
+        pattern="[0-9a-fA-F]{4,8}"
+        title="Apenas números e letras de A a F"
+      />
+      <br />
+      <input type="file" name="arquivo" accept=".pdf,.doc,.docx" multiple />
+      <br />
+      <input type="range" name="range" min="0" max="100" step="10" />
+
+      <br />
+      <datalist id="colorescolha" type="color">
+        <option value="#ff0000">Red</option>
+        <option value="#afd909">Red</option>
+        <option value="#b3e9c2">Red</option>
+      </datalist>
+      <input type="color" name="cor" value="#ff0000" list="colorescolha" />
+      <label for="maca">Maçã</label><br />
+
+      <br />
+      <input type="checkbox" id="fiat" name="checkbox" value="Fiat" checked />
+      <label for="fiat">Fiat</label>
+      <input type="checkbox" id="Mercedes" name="checkbox" value="Mercedes" />
+      <label for="mercedes">Mercedes</label>
+
+      <br />
+      <input type="radio" id="fiat" name="carros" value="Fiat" checked />
+      <label for="fiat">Fiat</label>
+      <input type="radio" id="mercedres" name="carros" value="Fiat" />
+      <label for="mercedres">Mercedres</label>
+
+      <br />
+      <input type="hidden" id="testeoculto" name="oculto" value="teste" />
+
+      <br />
+      <input
+        type="date"
+        name="data"
+        min="2023-01-01"
+        max="2024-12-31"
+        value="2024-06-15"
+      />
+
+      <br />
+      <label for="pesquisa">Pesquisar:</label>
+      <input
+        type="text"
+        id="pesquisa"
+        name="pesquisa"
+        placeholder="Pesquisar..."
+      />
+      <br />
+      <!-- mesma coisa -->
+      <label>
+        Pesquisar:
+        <input type="text" name="pesquisa2" placeholder="Pesquisar..." />
+      </label>
+
+      <br />
+      texto em Area <br>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        maxlength="10"
+        required
+        disabled
+      ></textarea>
+      <br />
+      Select
+      <select name="" id="" multiple size="6">
+        <optgroup label="Números">
+          <option value="1">1</option>
+          <option value="2" label="2"></option>
+        </optgroup>
+        <optgroup label="textos">
+          <option value="A">A</option>
+          <option value="B">B</option>
+        </optgroup>
+      </select>
+      <br />
+      Fieldset
+      <fieldset disabled>
+        <legend>Contato</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" name="" id="" />
+        <label for="telefone">Telefone:</label>
+        <input type="text" name="" id="" />
+      </fieldset>
+    </form>
+  </body>
+</html>

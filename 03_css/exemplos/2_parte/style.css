@@ -1,0 +1,26 @@
+h1 {
+    color: blue;
+    font-size: 60px;
+    letter-spacing: 2;
+    text-transform: uppercase;
+}
+
+#testeBlock{
+    border: solid 1px black;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+
+    padding: 120px;
+    margin: 20px;
+    font-size: 32px;
+    font-weight: 700;
+
+    background-color: lightgray;
+    background-image: url('../imagens/js.png'); ;
+}
+
+span {
+    border: solid 1px red;
+    display: block;
+}

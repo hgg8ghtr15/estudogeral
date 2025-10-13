@@ -1,0 +1,13 @@
+## Estrutura padrão do HTML
+
+<!DOCTYPE html>
+<html> --> root
+  <heade>
+    <meta >
+    <title> </title>
+  </heade>
+  <body>s
+    <p>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+#teste_transition {
+  background-color: white;
+  border: 1px solid black;
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.1;
+
+  /* transition-property: opacity, transform; */
+  transition-property: all;
+  transition-duration: 1s, 2s;
+  /* transition-delay: 2ms; */
+  /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  transition-timing-function: steps(5);
+  
+  /* &:hover {
+    opacity: 1;
+    transform: translateX(20px);
+    background-color: black;
+  } */
+}
+
+#teste_transition2 {
+  background-color: white;
+  border: 1px solid black;
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.1;
+
+  transition: all 400ms ease, transform 400ms linear;
+
+  &:hover {
+    opacity: 1;
+    transform: translateX(20px);
+    background-color: black;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  #teste_transition2 {
+    transition: none;
+  }
+}
+
+button {
+  background-color: deeppink;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+
+  animation-name: move;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+/* @keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(300px);
+  }
+} */
+@keyframes move {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: deeppink;
+  }
+  100% {
+    background-color: blue;
+    transform: translateX(400px);
+  }
+}
+
+#teste3 {
+  width: 80%;
+}
+
+div > img,
+p {
+  animation: fade linear, out linear;
+  /* animation-timeline: scroll(); */
+  /* animation-timeline: view(90% 10px); */
+  animation-timeline: view(), view();
+  /* animation-range-start: 1%;
+   animation-range-end: 40%; */
+  /* animation-range: entry; */
+  animation-range: entry, exit;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    scale: 0.8;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes out {
+  0% {
+    opacity: 0;
+    scale: 1;
+  }
+  100% {
+    opacity: 1;
+    scale: 0.8;
+  }
+}

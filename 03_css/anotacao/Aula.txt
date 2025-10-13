@@ -1,0 +1,87 @@
+#   CSS
+- Folha de estilo em cascata
+- propriedade valor
+- Estilo o html
+- arquivo .css
+
+-------------------------------------------------
+
+# Comentario
+/* Meu comentario*/
+
+# ANATOMIA
+    * Declaradores
+    * Seletores
+    * {} - conteto
+    * propriedade
+    * property value
+
+-------------------------------------------------
+
+# Especificiadde
+-> #id = 100
+-> .class = 10
+-> elemento = 1
+-> Na tag = pesso maior que os demais
+-> #id que tenha !important = maior que todas acima.
+
+-------------------------------------------------
+
+# Propriedade e medida
+property: value
+
+-------------------------------------------------
+
+# Seletores
+--> classe
+.minha{
+
+}
+<p class=".minha"> teste </p>
+
+--> id
+#meuid{
+
+}
+<p id="meuid"> teste </p>
+
+--> title
+[title="t"]{
+
+}
+<p title="t"> teste </p>
+
+--> universal
+* {
+
+}
+
+-------------------------------------------------
+
+# Combinator
+--> decendente
+p strong {
+
+}
+
+--> lista
+span, mark {
+
+}
+
+--> nest sibling
+h2 + p {
+    todo elemento p depois de um H2 é alterado
+}
+
+--> child
+nav > ul {
+    pegue o primeiro filho de nav
+}
+
+-------------------------------------------------
+
+# importando CSS no arquivo
+
+<link rel="stylesheet" href="style.css">
+

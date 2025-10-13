@@ -1,0 +1,139 @@
+/* App1 */
+
+/* #app{
+    display: inline-grid;
+}
+
+#app > div {
+    border: 1px solid red;
+}
+span {
+    border: 1px solid blue;
+} */
+
+/* app2 */
+
+/* #app2{
+    display: grid;
+    grid-template-columns: 100px 200px 300px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+}
+
+#app2 > * {
+    border: 1px solid red;
+    margin: 0;
+}
+span {
+    border: 1px solid blue;
+} */
+
+/* #app2 header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-column: 1/4
+}
+
+#app2 main {
+    grid-column: 1/3;
+}
+#app2 footer {
+    grid-column: 1/4;
+} */
+
+/* 
+
+
+#app3{
+    display: grid;
+    grid-template-columns: 100px 200px 300px; 
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+}
+
+#app3 > * {
+    border: 1px solid red;
+    margin: 0;
+}
+span {
+    border: 1px solid blue;
+}
+
+#app3 header {
+    grid-row: 1/5
+}
+
+#app3 main {
+    grid-column: 2/6;
+    grid-row: 1/4;
+}
+
+#app3 aside {
+    grid-column: 2/4;
+}
+
+#app3 footer {
+    grid-column: 4/6;
+}
+
+*/
+
+/* *{
+    box-sizing: border-box;
+}
+
+#app3 {
+    display: grid;
+    grid-template: 
+    "A B B" 60vh
+    "A B B" 20vh
+    "A C D" 20vh / 1fr 1fr 1fr;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+#app3 > * {
+    border: 1px solid red;
+}
+
+#app3 header{
+   grid-area: A ; 
+}
+#app3 main{
+   grid-area: B ; 
+}
+#app3 aside{
+   grid-area: C ; 
+}
+#app3 footer{
+   grid-area: D ; 
+} */
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 8px;
+  /* align-content: center;
+  justify-content: space-between; */
+  place-content: space-between;
+
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.grid > div {
+  background-color: cornflowerblue;
+}

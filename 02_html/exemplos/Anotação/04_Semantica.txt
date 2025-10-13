@@ -1,0 +1,42 @@
+## Css = Semantica
+--Dar Significado
+--Elementos
+
+## titulos
+<h1> títulos
+<h2> sub titulo
+
+## formatação basica
+Strong  = importancia
+em	= emfase
+mark	= relevancia
+s	= rsicado
+
+## Lista
+ul - não ordenada
+ol - ordenada
+li - linhas
+
+## representar códico
+< = &lt = lower than
+> = #gt = greather than
+pre 	= formata código
+code	= inserir código
+
+## hiperlink
+<a> =  tag
+--> href	= link
+href="http://google.com.br" link
+href="#minha_Id" = fragmento
+
+--> target = local que vai abrir
+
+
+## img = imagem
+--> src		= local
+--> alt		= acessibilidade
+--> width	= largura
+--> heigth	= altura
+
+
+
