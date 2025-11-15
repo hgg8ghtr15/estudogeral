@@ -87,3 +87,13 @@ function exibirValores( ...rest ) {
 }
 
 exibirValores(...numeros)
+
+console.log("----- Spread em objetos -----")
+
+const pessoas = [
+  { nome: "Fabio", idade: 30 },
+  { nome: "Lucas", idade: 25 }  
+]
+
+console.log(pessoas)
+console.log(...pessoas)
