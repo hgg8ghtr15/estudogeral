@@ -1,0 +1,54 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Notebook",
+      "preco": 2500
+    },
+    {
+      "id": 2,
+      "nome": "Smartphone",
+      "preco": 1500
+    },
+    {
+      "id": 3,
+      "nome": "Tablet",
+      "preco": 800
+    },
+    {
+      "id": 4,
+      "nome": "Monitor",
+      "preco": 1200
+    },
+    {
+      "id": 5,
+      "nome": "Teclado",
+      "preco": 150
+    },
+    {
+      "id": 6,
+      "nome": "Mouse",
+      "preco": 100
+    },
+    {
+      "id": 7,
+      "nome": "Impressora",
+      "preco": 600
+    },
+    {
+      "id": 8,
+      "nome": "Câmera",
+      "preco": 900
+    },
+    {
+      "id": "1763435215746",
+      "nome": "hub",
+      "preco": 750
+    },
+    {
+      "id": "1763435366571",
+      "nome": "hub",
+      "preco": "750"
+    }
+  ]
+}
