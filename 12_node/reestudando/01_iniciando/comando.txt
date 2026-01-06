@@ -1,0 +1,17 @@
+## inicianado um projeto
+npm init -y
+
+## Ajuste na importação, para "type": "module" em package.json
+
+## estrutura pasta "src"
+
+## Criar o arquivo server.js em src
+
+## Criando script de alteraçao automatica com --watch "caminho"
+    # adiciona ao script esse caminho
+        "dev":" node --watch ./src/server.js"
+    # Executa com 
+        npm run dev 
+
+## 
+
