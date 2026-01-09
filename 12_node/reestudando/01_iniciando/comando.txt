@@ -12,6 +12,3 @@ npm init -y
         "dev":" node --watch ./src/server.js"
     # Executa com 
         npm run dev 
-
-## 
-
