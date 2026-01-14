@@ -1,5 +1,8 @@
 import { routes } from '../routes.js'
 import { extractQueryParams } from '../utils/extractQueryParams.js'
+import { Database } from "../utils/database.js"
+
+const database = new Database()
 
 export function routerHandler(request, response) {
     // Procura a rota que corresponde ao método e URL da requisição
@@ -23,7 +26,7 @@ export function routerHandler(request, response) {
             request.query = extractQueryParams(query)
         }
 
-        return route.controller(request, response)
+        return route.controller({request, response, database})
     }
 
     // Se a rota não for encontrada, retorna 404
