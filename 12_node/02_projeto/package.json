@@ -1,0 +1,13 @@
+{
+  "name": "02_projeto",
+  "version": "1.0.0",
+  "description": "API de Grenciamento de ticket de suporte",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
