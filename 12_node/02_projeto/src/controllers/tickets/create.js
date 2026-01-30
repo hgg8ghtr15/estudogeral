@@ -12,5 +12,8 @@ export function create({ request, response, database }) {
         created_at: new Date(),
         updated_at: new Date()
     }
-    response.end(JSON.stringify({ ticket })); 
+
+    database.insert("tickets", ticket);
+    
+    response.writeHead(201).end(JSON.stringify({ ticket })); 
 }

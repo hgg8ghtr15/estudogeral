@@ -7,17 +7,65 @@ export class Database {
 
     }
 
-    constructor(){
+    constructor() {
         fs.readFile(DATABASE_PATH, "utf-8")
-        .then(data => { 
-            this.#database = JSON.parse(data)
-        })
-        .catch(() => { 
-            this.#persist()
-         })
+            .then(data => {
+                this.#database = JSON.parse(data)
+            })
+            .catch(() => {
+                this.#persist()
+            })
     }
 
-    #persist(){
+    #persist() {
         fs.writeFile(DATABASE_PATH, JSON.stringify(this.#database))
     }
+
+    insert(table, data) {
+        if (Array.isArray(this.#database[table])) {
+            this.#database[table].push(data)
+        } else {
+            this.#database[table] = [data]
+        }
+
+        this.#persist()
+    }
+
+
+    select(table, filters) {
+        let data = this.#database[table] ?? [];
+
+        if (filters) {
+            data = data.filter((row) => {
+                // Verifica se CADA filtro corresponde à linha, // Retorna true ou false
+                return Object.entries(filters).every(([key, value]) => {
+                    // Verifica se a chave existe na linha e se o valor corresponde (case-insensitive)
+                    return row[key] && String(row[key]).toLowerCase().includes(String(value).toLowerCase());
+                });
+            });
+        }
+        return data;
+    }
+
+    update(table, id, data) {
+        const rowIndex = this.#database[table].findIndex(row => row.id === id);
+
+        if (rowIndex > -1) {
+            this.#database[table][rowIndex] = {
+                ...this.#database[table][rowIndex],
+                ...data,
+            }
+
+            this.#persist();
+        }
+    }
+
+    delete(table, id) {
+        const rowIndex = this.#database[table].findIndex(row => row.id === id);
+        if (rowIndex > -1) {
+            this.#database[table].splice(rowIndex, 1);
+            this.#persist();
+        }
+    }
+    
 }
