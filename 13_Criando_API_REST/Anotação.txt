@@ -1,0 +1,40 @@
+-----------------------------------------------------------------------------------
+TypeScript
+-----------------------------------------------------------------------------------
+#### Inicia projeto
+
+#### Configura as pastas
+
+#### configura os arquivos
+
+#### instala o type script
+
+npm i typescript @types/node -D
+
+---converte o aquivo ts para js
+npx tsc src/server.ts
+
+#### instalação do tsx
+
+npm i tsx
+
+#### criado script de execução
+
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "dev": "tsx watch src/server.ts"
+  },
+
+#### Arquivo de configuração do typescript
+npx tsc --init
+
+#### Recomendação configuração do typescript
+https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
+
+-----------------------------------------------------------------------------------
+Express
+-----------------------------------------------------------------------------------
+
+#### Fazer a instalação do Express e suas dependencias
+npm i express
+npm i --save-dev @types/express
