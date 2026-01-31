@@ -1,10 +1,13 @@
 import express from 'express';
+import { routes } from './routes/index.js';
 
+const PORT = 3000
+const app = express();
 
-function soma (a: number, b: number): number {
-    return a + b;
-}
+app.use(express.json());
 
-const resultado: number = soma(2, 6);
+app.use(routes);
 
-// console.log(`O resultado da soma é: ${resultado}`);
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+})

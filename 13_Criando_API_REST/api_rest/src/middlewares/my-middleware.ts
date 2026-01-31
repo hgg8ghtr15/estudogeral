@@ -1,0 +1,12 @@
+import { type Request, type Response, type NextFunction } from "express";
+
+export function myMiddleware( 
+    req:Request, 
+    res:Response, 
+    next:NextFunction
+) {
+req.user_id = 123456
+console.log("Middleware executado!");
+return next();
+
+}
