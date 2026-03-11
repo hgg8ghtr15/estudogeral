@@ -38,3 +38,58 @@ Express
 #### Fazer a instalação do Express e suas dependencias
 npm i express
 npm i --save-dev @types/express
+
+
+-----------------------------------------------------------------------------------
+Query builds
+Knex.js - Migrations (Controle de Versão do Banco)
+-----------------------------------------------------------------------------------
+
+1. Criar uma nova Migration
+Cria o arquivo de "receita" onde você define o que será criado ou alterado no banco.
+code Bash
+npm run knex -- migrate:make create-courses
+
+2. Executar as Migrations (Update)
+Executa todos os arquivos de migração que ainda não foram rodados, atualizando o banco de dados.
+code Bash
+npm run knex -- migrate:latest
+
+3. Listar Status
+Lista todas as migrations e mostra quais já foram executadas e quais estão pendentes.
+(Corrigido: era 'run', não 'rum')
+code Bash
+npm run knex -- migrate:list
+
+4. Desfazer uma Migration específica (Down)
+Desfaz uma migração específica. Geralmente é necessário passar o nome exato do arquivo.
+(Corrigido: era 'run', não 'rum')
+code Bash
+npm run knex -- migrate:down 20260310142140_add-updated-courses.ts
+
+5. Desfazer a última alteração (Rollback)
+Desfaz o último "lote" (batch) de migrations que foi executado. É o "Ctrl+Z" mais comum.
+(Corrigido: era 'run', não 'rum')
+code
+Bash
+npm run knex -- migrate:rollback
+
+
+
+
+6. npm run knex -- seed:make insert-courses
+O que faz: Cria um novo arquivo de "semente".
+Esse comando vai criar um arquivo dentro da sua pasta de seeds (geralmente database/seeds/) chamado algo como insert-courses.js ou .ts.
+Ele cria apenas o molde (template). Você precisará abrir esse arquivo e escrever quais dados quer inserir na tabela de cursos (por exemplo: Nome do curso, Carga horária, etc).
+
+7. npm run knex -- seed:run
+O que faz: Executa as sementes.
+Esse comando lê os arquivos que estão na pasta de seeds e insere os dados de verdade no seu banco de dados.
+É muito usado para quando você acaba de criar o banco e quer que ele já venha com alguns dados para você testar sua aplicação sem precisar cadastrar tudo manualmente pelo navegador ou Postman.
+
+
+Dicas extras para suas anotações:
+O erro de digitação: Você escreveu npm rum em várias linhas. O correto é npm run (com "n" de navio).
+O que é Migration? Em vez de "Query builds", o termo técnico é Database Migrations. Elas servem para versionar o banco de dados (como um Git para as tabelas).
+Seeds (Opcional): Se você quiser popular o banco com dados de teste, você pode adicionar este comando:
+npm run knex -- seed:run (Executa os arquivos de população de dados).
