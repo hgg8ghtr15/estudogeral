@@ -6,9 +6,9 @@ import { Button } from "./components";
 export function App() {
   return (
     <div className={styles.container}>
-      <Button name="Criar" onClick={() => alert("Ação de Criar")} />
+      <Button name="Criar" onClick={() => alert("Ação de Criar")} idade={25} />
       <span>0</span>
-      <Button name="Apagar" onClick={() => alert("Ação de Apagar")} />
+      <Button name="Apagar" onClick={() => alert("Ação de Apagar")} idade={25} />
     </div>
 
   )

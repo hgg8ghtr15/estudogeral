@@ -1,0 +1,49 @@
+{
+  // Define o tamanho da indentação para 2 espaços
+  "editor.tabSize": 2,
+
+  // Impede que o VS Code tente adivinhar a indentação (força os 2 espaços)
+  "editor.detectIndentation": false,
+
+  // Configuração específica para o Prettier usar 2 espaços
+  "prettier.tabWidth": 2,
+
+  // Formata o código automaticamente ao salvar o arquivo
+  "editor.formatOnSave": true,
+
+  // Define o Prettier como formatador padrão
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Ações disparadas ao salvar o arquivo
+  "editor.codeActionsOnSave": {
+    // Corrige problemas do ESLint automaticamente
+    "source.fixAll.eslint": "explicit",
+    // Organiza os imports (remove os não usados e ordena)
+    "source.organizeImports": "explicit"
+  },
+
+  // Habilita o Emmet (atalhos HTML) para arquivos React (.jsx e .tsx)
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+
+  // Sugere e adiciona imports automaticamente ao digitar
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+
+  // Colore pares de chaves/parênteses para facilitar a leitura
+  "editor.bracketPairColorization.enabled": true,
+
+  // Mostra guias visuais ligando o início e fim dos blocos
+  "editor.guides.bracketPairs": "active",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
+}
